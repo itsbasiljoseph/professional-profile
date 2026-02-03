@@ -1,0 +1,255 @@
+%-------------------------
+% Resume in Latex
+% Author : Basil K Joseph
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Basil K Joseph} \\ \vspace{3pt}
+    
+    \small \href{tel:+91 8547526690}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-8547526690} ~} \href{mailto:dev.basiljoseph@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dev.basiljoseph@gmail.com}} ~ \\
+    \href{https://github.com/basilkjoseph}{\raisebox{-0.2\height}\faGithub\ \underline{basilkjoseph}} ~
+    \href{https://linkedin.com/in/basilkjoseph}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{basilkjoseph}}  ~
+    \vspace{-8pt}
+\end{center}
+
+    \vspace{-2pt}
+
+
+
+%-----------EXPERIENCE--------------
+
+\section{PROFESSIONAL EXPERIENCE}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Associate Data Engineer \href{Certificate Proof link}{ } }{Jun 2025 -- Present}{{Tredence Analytics}}{Chennai - India}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Contributed to a large-scale cloud migration for a multi-billion-dollar global FMCG organization, modernizing legacy Teradata workloads onto a Databricks lakehouse architecture. }}
+                \resumeItem{\normalsize{Performed data lineage and dependency analysis by reverse-engineering complex BTEQ scripts to map source systems and downstream warehouse tables.}}
+                \resumeItem{\normalsize{Built Silver-layer Databricks notebooks using PySpark and SQL, implementing scalable transformations with strong data quality and schema consistency. }}
+                \resumeItem{\normalsize{Integrated transformations with an ADF-based orchestration framework, enabling automated Source → Bronze → Silver pipelines under enterprise governance and CI/CD standards.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+ 
+\vspace{-15pt}
+
+
+%-----------PROJECTS----------
+\section{PROJECTS}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+% -------- Project 1 --------
+\resumeProjectHeading
+{\textbf{\large Real-Time Cloud Data Ingestion \& Analytics}
+\href{Project Link}{\raisebox{-0.1\height}\faExternalLink}
+$|$ \large{\underline{Snowflake, ADLS, SQL}}}{}
+
+\vspace{-15pt}
+\resumeItemListStart
+\resumeItem{Architected a serverless near–real-time ingestion \& ELT pipeline using Snowpipe, Streams (CDC), and Tasks, loading transactional data from Azure ADLS → Snowflake and triggering SQL-based transformations.}
+\resumeItem{Implemented data quality, modeling, and analytics layers, including SQL-based cleansing and IQR outlier detection, Type 1 \& Type 2 SCDs, and optimized views enabling self-service dashboards in Snowsight.}
+\resumeItem{Designed enterprise-grade security \& governance with RBAC, dynamic data masking, and network policies to ensure secure, compliant data access.}
+\resumeItemListEnd
+
+\vspace{-20pt}
+
+% -------- Project 2 --------
+\resumeProjectHeading
+{\textbf{\large Deep Learning-Based Solar Power Forecasting}
+\href{Project Link}{\raisebox{-0.1\height}\faExternalLink}
+$|$ \large{\underline{Python, Pandas, NumPy, TensorFlow, Keras}}}{}
+
+\vspace{-15pt}
+\resumeItemListStart
+\resumeItem{Designed and built an end-to-end time-series forecasting pipeline for solar power generation using deep learning models including LSTM, GRU, CNN-LSTM, TCN, and Transformer architectures.}
+\resumeItem{Engineered scalable time-series feature pipelines (lag features, rolling statistics, temporal encodings) using Pandas and NumPy, enabling robust sequential modeling.}
+\resumeItem{Improved forecasting accuracy to R² = 0.9488 by evaluating hybrid architectures and applying attention mechanisms and regularization, reducing overfitting by ~40\%.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{-15pt}
+\section{TECHNICAL SKILLS}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{Python (production data pipelines, PySpark), SQL (complex analytical \& transformation queries), C++ (algorithms, performance-critical logic) }} \\
+     \textbf{\normalsize{Data Engineering \& Distributed Systems:}}{ \normalsize{Databricks (Delta Lake, Lakehouse architecture, notebook-based pipelines), Snowflake, large-scale data transformation and batch processing}} \\
+     \textbf{\normalsize{Cloud \& Data Platforms:}}{ \normalsize{Microsoft Azure (data orchestration frameworks, cloud-native pipelines), enterprise data migration (on-prem → cloud) }} \\
+     \textbf{\normalsize{Developer Tooling \& Engineering Practices:}}{ \normalsize{Git, GitHub; collaborative development, code reviews, notebook-to-production workflows }} \\
+    \textbf{\normalsize{Core Concepts:  }}{\normalsize{GenAI, Machine Learning, Deep Learning, Data Structures \& Algorithms, Object-Oriented Programming (OOP)
+    }} \\
+    }}
+ \end{itemize}
+
+
+ %-----------EDUCATION-----------
+
+\vspace{-15pt}
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology, Calicut}{Dec 2021 -- May 2025}
+      {B.Tech - Electrical and Electronics Engineering }{\textbf{CGPA - 8.03}}
+  \resumeSubHeadingListEnd
+
+       
+\vspace{-10pt}
+
+
+%-----------CERTIFICATIONS-----------
+
+\section{CERTIFICATIONS}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://credentials.databricks.com/f1901b96-7a95-476b-a5de-4155079a63c4#acc.Pp3ksNlb}{Databricks Certified Data Engineer Associate  \href{}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Databricks}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://achieve.snowflake.com/6e13dba2-28c7-4cbc-b8ad-6375956ae4a5#acc.iorTtmpe}{SnowPro Core Certification  \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Snowflake}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://credentials.databricks.com/75e53e43-255a-4282-8bd3-2fcf4f64d5fe#acc.npDm2Z3i}{Academy Accreditation - Generative AI Fundamentals   \href{}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Databricks}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://www.coursera.org/account/accomplishments/verify/R8XU84PS6MXG}{Supervised Machine Learning: Regression and Classification    \href{}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Stanford University(Coursera)}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://drive.google.com/file/d/169IuUp5p0q3E-Jns6IxfF3iIaewwxnYn/view?usp=drivesdk}{Mastering Data Structures and Algorithms using C and C++  \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm}\hfill{Udemy}\\
+
+
+\end{document}
