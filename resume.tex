@@ -155,19 +155,20 @@
 \end{center}
 
     \vspace{-2pt}
+%-----------EDUCATION-----------
 
 
 
-%-----------EXPERIENCE--------------
+%-----------INVOLVEMENT---------------
 
 \section{PROFESSIONAL EXPERIENCE}
     \resumeSubHeadingListStart
-        \resumeSubheading{Associate Data Engineer \href{Certificate Proof link}{ } }{Jun 2025 -- Present}{{Tredence Analytics}}{Chennai - India}
+        \resumeSubheading{Associate Data Engineer \href{Certificate Proof link}{ } }{Jun 2025 -- Present}{{Tredence Analytics}}{Bengaluru - India}
             \resumeItemListStart
                 \resumeItem{\normalsize{Contributed to a large-scale cloud migration for a multi-billion-dollar global FMCG organization, modernizing legacy Teradata workloads onto a Databricks lakehouse architecture. }}
                 \resumeItem{\normalsize{Performed data lineage and dependency analysis by reverse-engineering complex BTEQ scripts to map source systems and downstream warehouse tables.}}
-                \resumeItem{\normalsize{Built Silver-layer Databricks notebooks using PySpark and SQL, implementing scalable transformations with strong data quality and schema consistency. }}
-                \resumeItem{\normalsize{Integrated transformations with an ADF-based orchestration framework, enabling automated Source → Bronze → Silver pipelines under enterprise governance and CI/CD standards.}}
+                \resumeItem{\normalsize{Developed and optimized Silver and Gold-layer Databricks notebooks using PySpark and SQL, implementing scalable transformations and leveraging techniques like filter pushdown, broadcast joins, and caching to enhance performance and execution efficiency.}}
+                \resumeItem{\normalsize{Orchestrated Source → Bronze → Silver pipelines using an ADF-based orchestration framework (client tool) and managed Gold-layer workflows via Databricks Workflows, enabling scalable, automated data processing under enterprise governance and CI/CD standards.}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -181,9 +182,25 @@
 \resumeSubHeadingListStart
 
 % -------- Project 1 --------
+
+\resumeProjectHeading
+{\textbf{\large AI-Powered Data Lineage Extraction System}
+\href{https://github.com/basilkjoseph/genai-lineage-automation}{\raisebox{-0.1\height}\faExternalLink}
+$|$ \large{\underline{Python, Gemini API, Prompt Engineering}}}{}
+
+\vspace{-15pt}
+\resumeItemListStart
+\resumeItem{Automated data lineage extraction for Teradata BTEQ pipelines, reducing manual analysis time from hours to minutes (90–95\%) by eliminating manual dependency tracing.}
+\resumeItem{Built a hybrid LLM + rule-based parsing system using Google Gemini, implementing recursive backtracking to trace data flow beyond staging/volatile tables to true base sources.}
+\resumeItem{Designed a deterministic pipeline with structured JSON outputs, schema parameter mapping, and batch processing, enabling scalable and consistent lineage analysis across multiple workflows.}
+\resumeItemListEnd
+
+\vspace{-20pt}
+
+% -------- Project 2 --------
 \resumeProjectHeading
 {\textbf{\large Real-Time Cloud Data Ingestion \& Analytics}
-\href{Project Link}{\raisebox{-0.1\height}\faExternalLink}
+\href{https://github.com/basilkjoseph/snowflake-end-to-end-data-pipeline}{\raisebox{-0.1\height}\faExternalLink}
 $|$ \large{\underline{Snowflake, ADLS, SQL}}}{}
 
 \vspace{-15pt}
@@ -193,26 +210,8 @@ $|$ \large{\underline{Snowflake, ADLS, SQL}}}{}
 \resumeItem{Designed enterprise-grade security \& governance with RBAC, dynamic data masking, and network policies to ensure secure, compliant data access.}
 \resumeItemListEnd
 
-\vspace{-20pt}
-
-% -------- Project 2 --------
-\resumeProjectHeading
-{\textbf{\large Deep Learning-Based Solar Power Forecasting}
-\href{Project Link}{\raisebox{-0.1\height}\faExternalLink}
-$|$ \large{\underline{Python, Pandas, NumPy, TensorFlow, Keras}}}{}
-
-\vspace{-15pt}
-\resumeItemListStart
-\resumeItem{Designed and built an end-to-end time-series forecasting pipeline for solar power generation using deep learning models including LSTM, GRU, CNN-LSTM, TCN, and Transformer architectures.}
-\resumeItem{Engineered scalable time-series feature pipelines (lag features, rolling statistics, temporal encodings) using Pandas and NumPy, enabling robust sequential modeling.}
-\resumeItem{Improved forecasting accuracy to R² = 0.9488 by evaluating hybrid architectures and applying attention mechanisms and regularization, reducing overfitting by ~40\%.}
-\resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
-
-
-%-----------TECHNICAL SKILLS-----------
 \vspace{-15pt}
 \section{TECHNICAL SKILLS}
 
@@ -227,9 +226,6 @@ $|$ \large{\underline{Python, Pandas, NumPy, TensorFlow, Keras}}}{}
     }}
  \end{itemize}
 
-
- %-----------EDUCATION-----------
-
 \vspace{-15pt}
 \section{EDUCATION}
   \resumeSubHeadingListStart
@@ -241,15 +237,11 @@ $|$ \large{\underline{Python, Pandas, NumPy, TensorFlow, Keras}}}{}
        
 \vspace{-10pt}
 
-
-%-----------CERTIFICATIONS-----------
-
 \section{CERTIFICATIONS}
 $\sbullet[.75] \hspace{0.2cm}${\href{https://credentials.databricks.com/f1901b96-7a95-476b-a5de-4155079a63c4#acc.Pp3ksNlb}{Databricks Certified Data Engineer Associate  \href{}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Databricks}\\
 $\sbullet[.75] \hspace{0.2cm}${\href{https://achieve.snowflake.com/6e13dba2-28c7-4cbc-b8ad-6375956ae4a5#acc.iorTtmpe}{SnowPro Core Certification  \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Snowflake}\\
 $\sbullet[.75] \hspace{0.2cm}${\href{https://credentials.databricks.com/75e53e43-255a-4282-8bd3-2fcf4f64d5fe#acc.npDm2Z3i}{Academy Accreditation - Generative AI Fundamentals   \href{}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Databricks}\\
 $\sbullet[.75] \hspace{0.2cm}${\href{https://www.coursera.org/account/accomplishments/verify/R8XU84PS6MXG}{Supervised Machine Learning: Regression and Classification    \href{}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Stanford University(Coursera)}\\
-$\sbullet[.75] \hspace{0.2cm}${\href{https://drive.google.com/file/d/169IuUp5p0q3E-Jns6IxfF3iIaewwxnYn/view?usp=drivesdk}{Mastering Data Structures and Algorithms using C and C++  \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm}\hfill{Udemy}\\
 
 
 \end{document}
