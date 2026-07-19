@@ -1,6 +1,8 @@
 %-------------------------
 % Resume in Latex
 % Author : Basil K Joseph
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -147,7 +149,6 @@
 
 \begin{center}
     {\Huge \scshape Basil K Joseph} \\ \vspace{3pt}
-    
     \small \href{tel:+91 8547526690}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-8547526690} ~} \href{mailto:dev.basiljoseph@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dev.basiljoseph@gmail.com}} ~ \\
     \href{https://github.com/basilkjoseph}{\raisebox{-0.2\height}\faGithub\ \underline{basilkjoseph}} ~
     \href{https://linkedin.com/in/basilkjoseph}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{basilkjoseph}}  ~
@@ -155,7 +156,6 @@
 \end{center}
 
     \vspace{-2pt}
-%-----------EDUCATION-----------
 
 
 
@@ -163,12 +163,21 @@
 
 \section{PROFESSIONAL EXPERIENCE}
     \resumeSubHeadingListStart
-        \resumeSubheading{Associate Data Engineer \href{Certificate Proof link}{ } }{Jun 2025 -- Present}{{Tredence Analytics}}{Bengaluru - India}
+        \resumeSubheading{Amazon \href{Certificate Proof link}{ } }{Jun 2026 -- Present}{{Software Development Engineer}}{Bengaluru - India}
             \resumeItemListStart
-                \resumeItem{\normalsize{Contributed to a large-scale cloud migration for a multi-billion-dollar global FMCG organization, modernizing legacy Teradata workloads onto a Databricks lakehouse architecture. }}
-                \resumeItem{\normalsize{Performed data lineage and dependency analysis by reverse-engineering complex BTEQ scripts to map source systems and downstream warehouse tables.}}
-                \resumeItem{\normalsize{Developed and optimized Silver and Gold-layer Databricks notebooks using PySpark and SQL, implementing scalable transformations and leveraging techniques like filter pushdown, broadcast joins, and caching to enhance performance and execution efficiency.}}
-                \resumeItem{\normalsize{Orchestrated Source → Bronze → Silver pipelines using an ADF-based orchestration framework (client tool) and managed Gold-layer workflows via Databricks Workflows, enabling scalable, automated data processing under enterprise governance and CI/CD standards.}}
+                \resumeItem{\normalsize{Built and deployed a serverless service using Java, AWS Lambda and CDK(TypeScript) as part of Amazon's SDE onboarding, covering the full build-test-deploy lifecycle using internal engineering tools.}}
+                \resumeItem{\normalsize{Contributing to the Amazon Live video player, working within a distributed, shoppable-livestreaming platform serving production traffic at scale.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \vspace{-15pt}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{Tredence \href{Certificate Proof link}{ } }{Jun 2025 -- Jun 2026}{{Data Engineer}}{Bengaluru - India}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Migrated 100+ enterprise data workloads from Teradata to Databricks Lakehouse for a multi-billion-dollar global FMCG organization.}}
+                \resumeItem{\normalsize{Designed LLM-powered agentic workflows using Claude Code to automate PySpark notebook generation, reducing development time by~75\% and increasing migration throughput by 4x.}}
+                \resumeItem{\normalsize{Built an AI-powered code review workflow that automatically analyzed generated notebooks, surfaced implementation issues, and produced structured review reports, improving code quality and review consistency across the team.}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -205,9 +214,9 @@ $|$ \large{\underline{Snowflake, ADLS, SQL}}}{}
 
 \vspace{-15pt}
 \resumeItemListStart
-\resumeItem{Architected a serverless near–real-time ingestion \& ELT pipeline using Snowpipe, Streams (CDC), and Tasks, loading transactional data from Azure ADLS → Snowflake and triggering SQL-based transformations.}
-\resumeItem{Implemented data quality, modeling, and analytics layers, including SQL-based cleansing and IQR outlier detection, Type 1 \& Type 2 SCDs, and optimized views enabling self-service dashboards in Snowsight.}
-\resumeItem{Designed enterprise-grade security \& governance with RBAC, dynamic data masking, and network policies to ensure secure, compliant data access.}
+\resumeItem{Architected a serverless near-real-time data ingestion and ELT pipeline using Snowpipe, Streams (CDC), and Tasks to continuously load transactional data from Azure ADLS into Snowflake.}
+\resumeItem{Built scalable data transformation and analytics layers with SQL, implementing data validation, Type 1 \& Type 2 Slowly Changing Dimensions (SCDs), and IQR-based outlier detection to deliver analytics-ready datasets.}
+\resumeItem{Implemented enterprise-grade security and governance using RBAC, dynamic data masking, and network policies, enabling secure, compliant, and self-service analytics through Snowsight.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -217,14 +226,15 @@ $|$ \large{\underline{Snowflake, ADLS, SQL}}}{}
 
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{\normalsize{Programming Languages:}}{ \normalsize{Python (production data pipelines, PySpark), SQL (complex analytical \& transformation queries), C++ (algorithms, performance-critical logic) }} \\
-     \textbf{\normalsize{Data Engineering \& Distributed Systems:}}{ \normalsize{Databricks (Delta Lake, Lakehouse architecture, notebook-based pipelines), Snowflake, large-scale data transformation and batch processing}} \\
-     \textbf{\normalsize{Cloud \& Data Platforms:}}{ \normalsize{Microsoft Azure (data orchestration frameworks, cloud-native pipelines), enterprise data migration (on-prem → cloud) }} \\
-     \textbf{\normalsize{Developer Tooling \& Engineering Practices:}}{ \normalsize{Git, GitHub; collaborative development, code reviews, notebook-to-production workflows }} \\
-    \textbf{\normalsize{Core Concepts:  }}{\normalsize{GenAI, Machine Learning, Deep Learning, Data Structures \& Algorithms, Object-Oriented Programming (OOP)
-    }} \\
+     \textbf{\normalsize{Languages:}}{ \normalsize{Python, Java, SQL, C++, TypeScript}} \\
+     \textbf{\normalsize{Cloud \& Data Technologies:}}{ \normalsize{AWS (Lambda, CDK), Databricks, Snowflake, Microsoft Azure}} \\
+     \textbf{\normalsize{AI \& Developer Tools:}}{ \normalsize{Claude Code, Google Gemini API, Git, GitHub}} \\
+     \textbf{\normalsize{Core Competencies:}}{ \normalsize{Software Engineering, Distributed Systems, Data Engineering, GenAI, Machine Learning, Data Structures \& Algorithms, Object-Oriented Programming (OOP)}} \\
     }}
  \end{itemize}
+
+
+%-----------EDUCATION-----------
 
 \vspace{-15pt}
 \section{EDUCATION}
@@ -236,6 +246,8 @@ $|$ \large{\underline{Snowflake, ADLS, SQL}}}{}
 
        
 \vspace{-10pt}
+
+%-----------CERTIFICATIONS-----------
 
 \section{CERTIFICATIONS}
 $\sbullet[.75] \hspace{0.2cm}${\href{https://credentials.databricks.com/f1901b96-7a95-476b-a5de-4155079a63c4#acc.Pp3ksNlb}{Databricks Certified Data Engineer Associate  \href{}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm} \hfill{Databricks}\\
